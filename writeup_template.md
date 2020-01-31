@@ -399,7 +399,7 @@ def lane(img, warped, left_fitx, right_fitx, ploty, Minv, left_curverad, right_c
     return result_lane
 
 The outputs of the lane fucntion for all test images are placed under (./ouput_images) with lane_image followed with number. One of the example for the detected lane is provided here.
-![lane_image1](./ouput_images/lane_image1.jpg)
+![lane_image](./output_images/lane_image1.jpg)
 
 ### Pipeline (video)
 
@@ -440,13 +440,15 @@ def process_pipeline(img):
     return result_lane.
 
 The output of the pipeline video is placed here.
-![project_video_solution](./ouput_videos/project_video_solution.mp4)
+![project_video_solution](./output_videos/project_video_solution.mp4)
+
+In case the link doesnt open please check the output videos for the result of pipeline(Couldnt figure out the reason for not opening link despite providing in right way). Thank you
 
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-It was really hard to find the co-ordinates required for bird's eye view manually. The co-ordinates defined works well for the provided images. However, it might fail for the other images as it is not a genralized approach to find the lane-lines. 
+It was really hard to find the co-ordinates required for bird's eye view manually. The co-ordinates defined works well for the provided images. However, it might fail for the other images as it is not a genralized approach to find the lane-lines. For two images still it was not completely perfect, i tried a lot and couldnt find the right points for those so mentioning it has the shortcome of algorithm!
 
 Also, very basic methods that were learnt during the course are applied for the threshold binary images as there is not much difference in the road conditions for the given video and iamges like darkness, lightness etc.., if the images are of different light variant then algorithm might fail to produce the same result. 
 
