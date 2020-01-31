@@ -137,6 +137,11 @@ Then, cv2.getPerspectiveTransform is used to calculate both, the perpective tran
 Please find below the result of warping an image after transforming its perpective to birds-eye view. 
 ![perspective_transform3](./output_images/perspective_transform2.jpg)
 
+The wraped image with destination points and original undistored image source points for one of the test image is provided below
+![warped_src_dst](./output_images/warped_src_dst.jpg)
+
+The wraped image of all the test images can be found at ![perspective_transform](./output_images)
+
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
